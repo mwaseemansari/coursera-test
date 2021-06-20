@@ -1,0 +1,79 @@
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgb(245, 245, 245) ;
+}
+h2 {
+    float: left;
+    position: absolute;
+    border: 1px solid black;
+    top: -4px;
+    right: 16px;
+}
+div:nth-child(1) > h2{
+    background-color: lightblue;
+}
+div:nth-child(2) > h2{
+    background-color: bisque;
+}
+div:nth-child(3) > h2{
+    background-color: coral;
+}
+
+p {
+    background-color: #e0e0e0;
+    padding: 40px 16px 16px 16px;
+    /* to centre it */
+    font-family: Helvetica;
+    border: 1px solid black;
+    margin: 16px;
+    color: black;
+    
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+}
+div.row > div {
+    position: relative;
+}
+
+/********** Desktop view **********/
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.33%;
+        float: left;
+        /* border: 1px solid gray; */
+    }
+}
+
+/********** Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        /* border: 1px solid black; */
+    }
+    .col-md-12 {
+        width: 100%;
+        float: left;
+        /* border: 1px solid black; */
+    }
+}
+/********** Mobile   view **********/
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+        float: left;
+    }
+}
