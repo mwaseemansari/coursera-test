@@ -14,7 +14,6 @@ h2 {
     float: left;
     position: absolute;
     border: 1px solid black;
-    top: -4px;
     right: 16px;
 }
 div:nth-child(1) > h2{
